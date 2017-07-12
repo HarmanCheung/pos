@@ -1,0 +1,15 @@
+#1  barcode to order
+输入: inputs[String]
+输出：order[String]        target:10min
+
+#2  percountprice
+输入: order[String]         target:10min
+输出: percountprice[number]
+
+#3  allcountprice 
+输入: percoutprice[number]    target:5min
+输出: number(allcountprice)
+
+#4 printReceipt
+输入: order[String],percountprice[number],number(allcountprice)  target:10min
+输出: receipt
