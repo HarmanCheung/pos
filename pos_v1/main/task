@@ -1,0 +1,23 @@
+#1: loadItem
+input: tags[String]                 10min
+output: item [Object]
+
+#2: judgePromotion
+input: item [Object]                10min
+output: itemAfterPromotion[Object]
+
+#3: calculatePercount
+input: itemAfterPromotion[Object]  20min
+output: perCount[number]
+
+#4: calculateAllCount
+input: perCount[number]            5min
+output: allCount(number)
+
+#5: calculateSaveMoney
+input: allCount(number)            5min
+output: saveMoney(number)
+
+#6: printReceipt
+input: tags[String]                10min
+output: receipt
